@@ -93,7 +93,7 @@ void getCompareOnotation(double iNList[], double iElapsedTimesList[], double hea
     matplot::plot(hN, hTime)->line_width(2);
 
     // matplot::xlim(0, 1000 * 1000);
-    matplot::ylim({0, 13000});
+    matplot::ylim({0, 50000});
     matplot::xlim({0, 100000});
     matplot::title("Compare heap and insertion sort");
     matplot::legend();

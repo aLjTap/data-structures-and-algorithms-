@@ -3,7 +3,7 @@
 #include "sort.h"
 #include <string>
 #include "bigONotation.h"
-#define N_MAX 100000
+#define N_MAX 10000000
 #define N_MID 10000
 #define N_MIN 1000
 #define N_MINI 100
@@ -22,46 +22,46 @@ int main()
     int AMini[N_MINI];
     int AMinMini[N_MINIMINI];
 
-    putRandomNumberInFile(N_MAX);
-    putRandomNumberInArray(fileName, AMax, N_MAX);
+    // putRandomNumberInFile(N_MAX);
+    // putRandomNumberInArray(fileName, AMax, N_MAX);
 
-    printf("Original Array\n");
-    printArray(AMax, N_MAX);
+    // printf("Original Array\n");
+    // printArray(AMax, N_MAX);
 
-    /**
-     * @brief  INSERTION SORT WITH ARRAYS
-     */
-    double iMAxTime = iSort(AMax, N_MAX);
+    // /**
+    //  * @brief  INSERTION SORT WITH ARRAYS
+    //  */
+    // double iMAxTime = iSort(AMax, N_MAX);
 
-    putRandomNumberInFile(N_MID);
-    putRandomNumberInArray(fileName, AMid, N_MID);
+    // putRandomNumberInFile(N_MID);
+    // putRandomNumberInArray(fileName, AMid, N_MID);
 
-    double iMidTime = iSort(AMid, N_MID);
+    // double iMidTime = iSort(AMid, N_MID);
 
-    putRandomNumberInFile(N_MIN);
-    putRandomNumberInArray(fileName, AMin, N_MIN);
+    // putRandomNumberInFile(N_MIN);
+    // putRandomNumberInArray(fileName, AMin, N_MIN);
 
-    double iMinTime = iSort(AMin, N_MIN);
+    // double iMinTime = iSort(AMin, N_MIN);
 
-    putRandomNumberInFile(N_MINI);
-    putRandomNumberInArray(fileName, AMini, N_MINI);
+    // putRandomNumberInFile(N_MINI);
+    // putRandomNumberInArray(fileName, AMini, N_MINI);
 
-    double iMiniTime = iSort(AMini, N_MINI);
+    // double iMiniTime = iSort(AMini, N_MINI);
 
-    putRandomNumberInFile(N_MINIMINI);
-    putRandomNumberInArray(fileName, AMinMini, N_MINIMINI);
+    // putRandomNumberInFile(N_MINIMINI);
+    // putRandomNumberInArray(fileName, AMinMini, N_MINIMINI);
 
-    double iMinMiniTime = iSort(AMinMini, N_MINIMINI);
+    // double iMinMiniTime = iSort(AMinMini, N_MINIMINI);
 
-    cout << "iTime: " << iMAxTime << endl;
-    cout << "iTime: " << iMidTime << endl;
-    cout << "iTime: " << iMinTime << endl;
-    cout << "iTime: " << iMinMiniTime << endl;
+    // cout << "iTime: " << iMAxTime << endl;
+    // cout << "iTime: " << iMidTime << endl;
+    // cout << "iTime: " << iMinTime << endl;
+    // cout << "iTime: " << iMinMiniTime << endl;
 
-    double iNumberofArray[] = {N_MAX, N_MID, N_MIN, N_MINI, N_MINIMINI};
-    double iTimeList[] = {iMAxTime, iMidTime, iMinTime, iMiniTime, iMinMiniTime};
-    // getOnotationGraph(iSortType, iNumberofArray, iTimeList);
-    printf("Insertion Sorted Array\n");
+    // double iNumberofArray[] = {N_MAX, N_MID, N_MIN, N_MINI, N_MINIMINI};
+    // double iTimeList[] = {iMAxTime, iMidTime, iMinTime, iMiniTime, iMinMiniTime};
+    // // getOnotationGraph(iSortType, iNumberofArray, iTimeList);
+    // printf("Insertion Sorted Array\n");
     // printArray(A, numberofArray);
 
     // shuffler(A, numberofArray);
@@ -122,8 +122,8 @@ int main()
 
     double hNumberofArray[] = {N_MAX, N_MID, N_MIN, N_MINI, N_MINIMINI};
     double hNumberList[] = {heapMaxTime, heapMidTime, heapMinTime, heapMiniTime, heapMinMiniTime};
-    // getOnotationGraph(heapSortType, hNumberofArray, hNumberList);
-    getCompareOnotation(iNumberofArray, iTimeList , hNumberofArray , hNumberList);
+    getOnotationGraph(heapSortType, hNumberofArray, hNumberList);
+    // getCompareOnotation(iNumberofArray, iTimeList , hNumberofArray , hNumberList);
     // printf("Heap Sorted Array\n");
     // printArray(A, numberofArray);
 
